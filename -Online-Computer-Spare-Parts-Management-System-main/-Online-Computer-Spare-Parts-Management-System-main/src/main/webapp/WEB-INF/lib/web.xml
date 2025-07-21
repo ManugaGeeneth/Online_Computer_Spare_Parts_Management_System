@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         id="WebApp_ID"
+         version="3.0">
+         
+    <servlet>
+<servlet-name>addcustomer</servlet-name>
+<servlet-class>servlet.addcustomer</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>addcustomer</servlet-name>
+<url-pattern>/addcus</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+<servlet-name>readtable</servlet-name>
+<servlet-class>servlet.readtable</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>readtable</servlet-name>
+<url-pattern>/readt</url-pattern>
+</servlet-mapping>
+ <servlet>
+ 
+ 
+<servlet-name>updatecustomer</servlet-name>
+<servlet-class>servlet.updatecustomer</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>updatecustomer</servlet-name>
+<url-pattern>/updatecus</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>deletedata</servlet-name>
+<servlet-class>servlet.deletedata</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>deletedata</servlet-name>
+<url-pattern>/delete</url-pattern>
+</servlet-mapping>
+ 
+
+</web-app>

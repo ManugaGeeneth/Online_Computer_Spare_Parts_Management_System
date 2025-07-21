@@ -1,0 +1,81 @@
+/* Ensure the canvas covers the full viewport */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+/* Center the form container with reduced size */
+.form-container {
+    position: relative;
+    z-index: 2;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4); /* More transparent white background */
+    padding: 5px; /* Reduced padding */
+    margin: auto;
+    border-radius: 8px;
+    max-width: 600px; /* Reduced width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh; /* Center vertically with less height */
+    border: 2px solid #ff8c00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* 3x2 grid for component selections */
+.selection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* Reduced space between items */
+}
+
+/* Card styling */
+.card-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px; /* Reduced padding */
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #ff8c00;
+}
+
+.card-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+/* Transparent selection and input styling */
+.form-select, .form-control {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent selection bar and input field */
+    border: 1px solid #ff8c00; /* Border color to match theme */
+    color: #000; /* Text color */
+}
+
+/* Center the submit button */
+button[type="submit"] {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff8c00;
+    border-color: #ff8c00;
+    color: #f8f9fa;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the email input and button */
+.email-input {
+    width: 100%;
+    margin-top: 2px;
+     height: 40px;
+      font-size: 14px;
+}
